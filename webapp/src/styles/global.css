@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+  themes: light --default;
+}
+@theme {
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-fancy: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/BricolageGrotesque-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/BricolageGrotesque-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/BricolageGrotesque-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Junicode";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/junicode.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Junicode";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/junicode-italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Junicode";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/junicode-bold.ttf") format("truetype");
+}
