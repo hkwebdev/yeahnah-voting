@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  vote:
+    image: yeahnah:main
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: yeahnah-vote
+    restart: unless-stopped
+    ports:
+      - "8090:8090"
+    volumes:
+      - pb-data:/app/data
+
+volumes:
+  pb-data:

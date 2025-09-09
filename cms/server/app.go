@@ -21,7 +21,7 @@ func CreateApp() *App {
 
 	base := pocketbase.NewWithConfig(pocketbase.Config{
 		DefaultDev:     true,
-		DefaultDataDir: "./.data/pb_data." + env + ".db",
+		DefaultDataDir: "./data/pb_data." + env,
 	})
 
 	app := &App{
